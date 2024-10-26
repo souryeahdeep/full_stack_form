@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Right Now!!!!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <div class="main">
+      <form action="/submit" method="post" class="giveit">
+        <div class="schName">
+          <span>School Name <span style="color: red">*</span></span>
+          <input
+            type="text"
+            name="SCHName"
+            id="user_Fname"
+            class="fillUP"
+            placeholder="School Name"
+            required
+          />
+        </div>
+        <div class="stuName">
+          <span>Scholer Name <span style="color: red">*</span></span>
+          <div class="Names">
+            <input
+              type="text"
+              name="FName"
+              id="user_name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="LName"
+              id="user_name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="parName">
+          <span>Parent Name <span style="color: red">*</span></span>
+          <div class="Names">
+            <input
+              type="text"
+              name="PFName"
+              id="user_name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="PLName"
+              id="user_name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="parNum">
+          <span>Parents' Number <span style="color: red">*</span></span>
+          <input
+            type="number"
+            name="PFNum"
+            id="user_Fname"
+            class="fillUP"
+            placeholder="Parents' Number"
+            required
+          />
+        </div>
+        <div class="parMail">
+          <span>Parents' Mail <span style="color: red">*</span></span>
+          <input
+            type="email"
+            name="PFmail"
+            id="user_Fname"
+            class="fillUP"
+            placeholder="Parents' Mail"
+            required
+          />
+        </div>
+        <div class="SUBTN">
+          <button type="submit" class="SubBTN">
+          <span>Submit
+            <% if(locals.submit==true){ %>
+                <span class="checkmark"> ✔ </span>  
+            <% } %>
+        </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
